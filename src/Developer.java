@@ -19,6 +19,10 @@ public class Developer extends Employee {
 
     public String getFavLanguage() { return favLanguage;}
     public void setFavLanguage(String favLanguage){this.favLanguage = favLanguage;}
+    @Override
+    public String toString(){
+        return super.toString() + "\n" + progLanguages + "\n" + contributions + "\n" + favLanguage;
+    }
 
 
 

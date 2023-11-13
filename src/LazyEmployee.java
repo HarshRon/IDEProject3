@@ -18,4 +18,9 @@ public class LazyEmployee extends Employee{
 
     public int getDeadlinesIgnored() {return deadlinesIgnored;}
     public void setDeadlinesIgnored(int deadlinesIgnored) {this.deadlinesIgnored = deadlinesIgnored;}
+
+    @Override
+    public String toString(){
+        return super.toString() + "\n" + coffeeBreaks + "\n" + commonExcuse + "\n" + deadlinesIgnored;
+    }
 }

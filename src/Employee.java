@@ -41,5 +41,9 @@ public class Employee
    {
       this.years = years;
    }
+
+   public String toString(){
+      return (name + "\n"+age + "\n"+ id + "\n" + gender + "\n" + years);
+   }
 }
 

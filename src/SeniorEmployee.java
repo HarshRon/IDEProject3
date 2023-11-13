@@ -24,6 +24,12 @@ public class SeniorEmployee extends Employee
 
    public String getCertifications() { return certifications;}
    public void setCertifications(String certifications){this.certifications = certifications;}
+@Override
+   public String toString(){
+      return super.toString() + "\n" + employeeCount + "\n" + certifications + "\n" + elevatorPin;
+   }
+
+
 
 
 
