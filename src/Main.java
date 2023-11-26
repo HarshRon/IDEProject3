@@ -97,7 +97,7 @@ public class Main {
             favLanguage = kb.nextLine();
             System.out.println("How many code contributions did you have last month?");
             contributions = kb.nextInt();
-            if(progLanguages < 2 && contributions < 10){
+            if(progLanguages <= 2 && contributions < 10){
                 System.out.println("****** !Warning! ******");
                 System.out.println("How did you even get a job here? Do better before your next review!");
             }
