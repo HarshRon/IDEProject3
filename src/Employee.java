@@ -1,4 +1,5 @@
 public class Employee
+   //parent class
 {
 //   Employee(int id, double salary){
 //   this.id = id;
@@ -43,7 +44,7 @@ public class Employee
    }
 
    public String toString(){
-      return (name + "\n"+age + "\n"+ id + "\n" + gender + "\n" + years);
+      return ("Employee:  " + name + "\n"+"Age:  "+age + "\n"+"Pin:  "+ id + "\n" +"Gender:  "+ gender + "\n" +"Tenure:  "+ years);
    }
 }
 

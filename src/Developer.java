@@ -20,8 +20,9 @@ public class Developer extends Employee {
     public String getFavLanguage() { return favLanguage;}
     public void setFavLanguage(String favLanguage){this.favLanguage = favLanguage;}
     @Override
+    //overrides parent class and adds child class variables to print out
     public String toString(){
-        return super.toString() + "\n" + progLanguages + "\n" + contributions + "\n" + favLanguage;
+        return super.toString() + "\n" +"Proficient in:  "+ progLanguages+" Programming languages" + "\n" +"Favoite Language:  "+favLanguage  + "\n" +"Contributions:  "+ contributions;
     }
 
 

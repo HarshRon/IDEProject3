@@ -20,7 +20,8 @@ public class LazyEmployee extends Employee{
     public void setDeadlinesIgnored(int deadlinesIgnored) {this.deadlinesIgnored = deadlinesIgnored;}
 
     @Override
+    //overrides parent class and adds child class variables to print out
     public String toString(){
-        return super.toString() + "\n" + coffeeBreaks + "\n" + commonExcuse + "\n" + deadlinesIgnored;
+        return super.toString() + "\n" +"Daily Breaks:  "+ coffeeBreaks + "\n" +"Common Excuse:  "+ commonExcuse + "\n" +"Deadlines Ignored:  "+ deadlinesIgnored;
     }
 }

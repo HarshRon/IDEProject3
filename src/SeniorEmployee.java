@@ -1,5 +1,6 @@
 public class SeniorEmployee extends Employee
 {
+   //constructor using super to eliminate repetitive variables
    SeniorEmployee(String name, int age, int id, String gender,double years,int employeeCount,String certifications, int elevatorPin){
    super(name,age,id,gender,years);
    this.employeeCount = employeeCount;
@@ -9,7 +10,7 @@ public class SeniorEmployee extends Employee
    private int elevatorPin;
    private int employeeCount;
    private String certifications;
-
+//setters and getters
    public int getElevatorPin()
    {
       return elevatorPin;
@@ -25,8 +26,9 @@ public class SeniorEmployee extends Employee
    public String getCertifications() { return certifications;}
    public void setCertifications(String certifications){this.certifications = certifications;}
 @Override
+//overrides parent class and adds child class variables to print out
    public String toString(){
-      return super.toString() + "\n" + employeeCount + "\n" + certifications + "\n" + elevatorPin;
+      return super.toString() + "\n" +"Employees:  "+ employeeCount + "\n" +"Highest Achievement:  "+ certifications + "\n" +"Elevator Pin:  "+ elevatorPin;
    }
 
 
